@@ -20,6 +20,7 @@ var allFeeds = [
         url: 'http://feeds.feedburner.com/udacity-linear-digressions'
     }
 ];
+//var allFeeds=[];
 
 /* 这个函数负责启动我们的应用，Google Feed Reader API 会被异步加载
  * 然后调用这个方法。
