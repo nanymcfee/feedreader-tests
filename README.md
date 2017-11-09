@@ -1,7 +1,7 @@
 
 
 # 项目说明
-##如何运行
+## 如何运行
 1. 下载项目所有文件
 2. 设置服务器代理
 2. 用浏览器运行index.html
@@ -12,5 +12,5 @@
 
 ## 测试不通过解决办法
 1. 文本编辑器打开jasmine/spec/feedreaser.js
-2. 找到全局变量jasmine.DEFAULT_TIMEOUT_INTERVAL,修改其数值，设置到足够长的测试时间，例如300000.保存修改
+2. 找到全局变量jasmine.DEFAULT_TIMEOUT_INTERVAL,修改其数值，设置到足够长的测试时间，例如3000000.保存修改
 3. 重新用浏览器打开index.html,运行结果应该可以正常通过测试。
