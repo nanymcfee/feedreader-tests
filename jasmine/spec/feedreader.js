@@ -34,14 +34,15 @@ $(function() {
             }
 
         });*/
-        allFeeds.foreach(function(item){
-          it('url are defined and is not empty',function(){
-            expect(item.url).toBeTruthy();
+        for(var j=0;j<allFeeds.length;j++){
+          it('url is defined and is not empty',function(){
+            expect(allFeeds[j].url).toBeDefined();
+            expect(allFeeds[j].url).not.toBe("");
             //添加正则表达式，验证URL格式
             var regularExpressionUrl ="@(https?|ftp)://(-\.)?([^\s/?\.#-]+\.?)+(/[^\s]*)?$@iS";
-            expect(item.url).toMatch(regularExpressionUrl);
+            expect(allFeeds[j].url).toMatch(regularExpressionUrl);
           });
-        });
+        };
 
 
 
